@@ -1,0 +1,30 @@
+.wedo {
+  display: flex;
+
+  .wedo__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.wedo__label {
+  @extend %align;
+
+  height: 70px;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+
+  background-color: var(--bg-color-dark);
+  opacity: 0.8;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+}

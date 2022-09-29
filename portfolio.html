@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="page-header">
+      <div class="container">
+        <nav class="page-navigation">
+          <a href="./index.html" class="logo"
+            >Web<span class="logo_half-title_black">Studio</span></a
+          >
+          <ul class="menu nolist">
+            <li class="menu__item test">
+              <a class="menu__link" href="./index.html">Studio</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link_current_blue" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <ul class="page-header-contacts nolist">
+          <li class="page-header-contacts__item">
+            <a class="page-header-contacts__element" href="mailto:info@devstudio.com"
+              ><svg class="page-header-contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="page-header-contacts__item">
+            <a class="page-header-contacts__element" href="tel:+380961111111"
+              ><svg class="page-header-contacts__icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+380 961 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main section -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 hidden>List of items in portfolio</h1>
+          <ul class="radio-btn nolist">
+            <li class="radio-btn__item">
+              <button class="button button_all" type="button">All</button>
+            </li>
+            <li class="radio-btn__item">
+              <button class="button button_idle" type="button">Web-sites</button>
+            </li>
+            <li class="radio-btn__item">
+              <button class="button button_idle" type="button">Apps</button>
+            </li>
+            <li class="radio-btn__item">
+              <button class="button button_idle" type="button">Design</button>
+            </li>
+            <li class="radio-btn__item">
+              <button class="button button_idle" type="button">Marketing</button>
+            </li>
+          </ul>
+          <!-- List of items with filter -->
+          <ul class="portfolio nolist">
+            <li class="portfolio__card">
+              <a class="portfolio__card-link" href="">
+                <div class="portfolio__overlay">
+                  <img
+                    src="./images/portfolio/technoduck.jpg"
+                    alt="Laptop with people's photos"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio__label">
+                    <p class="portfolio__label-text">
+                      Technoduck is a state-of-the-art coronavirus distribution platform. Companies
+                      use this platform for digital espionage and attacks on competitors' secure
+                      servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__card-desc">
+                  <h2 class="portfolio__card-title">Technoduck</h2>
+                  <p class="portfolio__card-filter">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card">
+              <a class="portfolio__card-link" href="">
+                <div class="portfolio__overlay">
+                  <img
+                    src="./images/portfolio/poster-new-orlean-vs-golden-star.jpg"
+                    alt="Two basketball players"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio__label">
+                    <p class="portfolio__label-text">
+                      Technoduck is a state-of-the-art coronavirus distribution platform. Companies
+                      use this platform for digital espionage and attacks on competitors' secure
+                      servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__card-desc">
+                  <h2 class="portfolio__card-title">Poster New Orlean vs Golden Star</h2>
+                  <p class="portfolio__card-filter">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card">
+              <a class="portfolio__card-link" href="">
+                <div class="portfolio__overlay">
+                  <img
+                    src="./images/portfolio/seafood-restaurant.jpg"
+                    alt="The logo of the restorant with fish in the background"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio__label">
+                    <p class="portfolio__label-text">
+                      Technoduck is a state-of-the-art coronavirus distribution platform. Companies
+                      use this platform for digital espionage and attacks on competitors' secure
+                      servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__card-desc">
+                  <h2 class="portfolio__card-title">Seafood Restaurant</h2>
+                  <p class="portfolio__card-filter">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card">
+              <a class="portfolio__card-link" href="">
+                <div class="portfolio__overlay">
+                  <img
+                    src="./images/portfolio/project-prime.jpg"
+                    alt="Headphones"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio__label">
+                    <p class="portfolio__label-text">
+                      Technoduck is a state-of-the-art coronavirus distribution platform. Companies
+                      use this platform for digital espionage and attacks on competitors' secure
+                      servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__card-desc">
+                  <h2 class="portfolio__card-title">Project Prime</h2>
+                  <p class="portfolio__card-filter">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card">
+              <a class="portfolio__card-link" href="">
+                <div class="portfolio__overlay">
+                  <img
+                    src="./images/portfolio/project-boxes.jpg"
+                    alt="Two boxes of different sizes"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio__label">
+                    <p class="portfolio__label-text">
+                      Technoduck is a state-of-the-art coronavirus distribution platform. Companies
+                      use this platform for digital espionage and attacks on competitors' secure
+                      servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__card-desc">
+                  <h2 class="portfolio__card-title">Project Boxes</h2>
+                  <p class="portfolio__card-filter">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card">
+              <a class="portfolio__card-link" href="">
+                <div class="portfolio__overlay">
+                  <img
+                    src="./images/portfolio/inspiration-has-no-borders.jpg"
+                    alt="Personal computer"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio__label">
+                    <p class="portfolio__label-text">
+                      Technoduck is a state-of-the-art coronavirus distribution platform. Companies
+                      use this platform for digital espionage and attacks on competitors' secure
+                      servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__card-desc">
+                  <h2 class="portfolio__card-title">Inspiration has no Borders</h2>
+                  <p class="portfolio__card-filter">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card">
+              <a class="portfolio__card-link" href="">
+                <div class="portfolio__overlay">
+                  <img
+                    src="./images/portfolio/limited-edition.jpg"
+                    alt="Opened book"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio__label">
+                    <p class="portfolio__label-text">
+                      Technoduck is a state-of-the-art coronavirus distribution platform. Companies
+                      use this platform for digital espionage and attacks on competitors' secure
+                      servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__card-desc">
+                  <h2 class="portfolio__card-title">Limited Edition</h2>
+                  <p class="portfolio__card-filter">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card">
+              <a class="portfolio__card-link" href="">
+                <div class="portfolio__overlay">
+                  <img
+                    src="./images/portfolio/project-lab.jpg"
+                    alt="White tag on a string"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio__label">
+                    <p class="portfolio__label-text">
+                      Technoduck is a state-of-the-art coronavirus distribution platform. Companies
+                      use this platform for digital espionage and attacks on competitors' secure
+                      servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__card-desc">
+                  <h2 class="portfolio__card-title">Project LAB</h2>
+                  <p class="portfolio__card-filter">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card">
+              <a class="portfolio__card-link" href="">
+                <div class="portfolio__overlay">
+                  <img
+                    src="./images/portfolio/growing-business.jpg"
+                    alt="Person is typing something on a laptop"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio__label">
+                    <p class="portfolio__label-text">
+                      Technoduck is a state-of-the-art coronavirus distribution platform. Companies
+                      use this platform for digital espionage and attacks on competitors' secure
+                      servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__card-desc">
+                  <h2 class="portfolio__card-title">Growing Business</h2>
+                  <p class="portfolio__card-filter">Apps</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <div>
+          <a class="logo logo__footer" href="./index.html"
+            >Web<span class="logo__half-title_white">Studio</span></a
+          >
+          <address>
+            <ul class="nolist footer-address">
+              <li class="footer-address__item">
+                <a
+                  class="footer-address__location"
+                  href="https://goo.gl/maps/E1iEUMU5giMTUFDc8"
+                  target="_blank"
+                  >695 Park Ave, New York, NY 10065, United States
+                </a>
+              </li>
+              <li class="footer-address__item">
+                <a class="footer-address__contacts" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-address__item">
+                <a class="footer-address__contacts" href="tel:+12127724150">+1 212-772-4150</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="find-us">
+          <p class="find-us__title">Find us on</p>
+          <ul class="social">
+            <li>
+              <a class="social__link-footer" href="" aria-label="Instagram Icon">
+                <span class="visually-hidden">Link to Instagram</span>
+                <svg class="social__icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="social__link-footer" href="" aria-label="Twitter Icon">
+                <span class="visually-hidden">Link to Twitter</span>
+                <svg class="social__icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link-footer" href="" aria-label="Facebook Icon">
+                <span class="visually-hidden">Link to Facebook</span>
+                <svg class="social__icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link-footer" href="" aria-label="LinkedIn Icon">
+                <span class="visually-hidden">Link to LinkedIn</span>
+                <svg class="social__icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe__title">Subscribe to the newsletter</p>
+          <form class="subscribe__form">
+            <label class="subscribe__form-label">
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="subscribe__form-input"
+                name="email"
+                required
+              />
+            </label>
+
+            <button class="button subscribe-btn" type="submit">
+              Subscribe
+              <svg class="subscribe-btn__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+@mixin font($fs: 14px, $fw: 400, $lh: 1.16) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+// @mixin nolist() {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+// }
