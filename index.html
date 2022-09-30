@@ -19,6 +19,7 @@
   </head>
   <body>
     <!-- Header Section -->
+
     <header class="page-header">
       <div class="container">
         <nav class="page-navigation">
@@ -129,30 +130,75 @@
           <h2 class="title">What we do</h2>
           <ul class="wedo nolist">
             <li class="wedo__item">
-              <img
-                src="./images/studio/what-we-do-1.jpg"
-                alt="Person types in front of a tablet"
-                width="370"
-                height="294"
-              />
+              <picture class="wedo__pic">
+                <source
+                  srcset="
+                    ./images/studio/desktop/what-we-do-1-d@1x.webp 1x,
+                    ./images/studio/desktop/what-we-do-1-d@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/desktop/what-we-do-1-d@1x.jpg 1x,
+                    ./images/studio/desktop/what-we-do-1-d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/studio/desktop/what-we-do-1-d@1x.jpg"
+                  alt="Person types in front of a tablet"
+                />
+              </picture>
               <p class="wedo__label">Desktop Apps</p>
             </li>
             <li class="wedo__item">
-              <img
-                src="./images/studio/what-we-do-2.jpg"
-                alt="Person holds a cellphone"
-                width="370"
-                height="294"
-              />
+              <picture class="wedo__pic">
+                <source
+                  srcset="
+                    ./images/studio/desktop/what-we-do-2-d@1x.webp 1x,
+                    ./images/studio/desktop/what-we-do-2-d@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/desktop/what-we-do-2-d@1x.jpg 1x,
+                    ./images/studio/desktop/what-we-do-2-d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/studio/desktop/what-we-do-2-d@1x.jpg"
+                  alt="Person holds a cellphone"
+                />
+              </picture>
               <p class="wedo__label">Mobile Apps</p>
             </li>
             <li class="wedo__item">
-              <img
-                src="./images/studio/what-we-do-3.jpg"
-                alt="Person looks at a tablet"
-                width="370"
-                height="294"
-              />
+              <picture class="wedo__pic">
+                <source
+                  srcset="
+                    ./images/studio/desktop/what-we-do-3-d@1x.webp 1x,
+                    ./images/studio/desktop/what-we-do-3-d@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/desktop/what-we-do-3-d@1x.jpg 1x,
+                    ./images/studio/desktop/what-we-do-3-d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/studio/desktop/what-we-do-3-d@1x.jpg"
+                  alt="Person looks at a tablet"
+                />
+              </picture>
               <p class="wedo__label">Design Solutions</p>
             </li>
           </ul>
@@ -160,18 +206,66 @@
       </section>
 
       <!-- 'Our Team' section-->
+
+      <!-- TODO: Remove width and hight -->
       <section class="section section__team">
         <div class="container">
           <h2 class="title">Our Team</h2>
           <ul class="team nolist">
             <li class="team__member-card">
-              <img
-                src="./images/studio/our-team-1.jpg"
-                alt="Фото Игоря Демьяненко"
-                width="270"
-                height="260"
-                lang="ru"
-              />
+              <picture class="team__member-card-pic">
+                <source
+                  srcset="
+                    ./images/studio/desktop/our-team-1-d@1x.webp 1x,
+                    ./images/studio/desktop/our-team-1-d@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/tablet/our-team-1-t@1x.webp 1x,
+                    ./images/studio/tablet/our-team-1-t@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/mobile/our-team-1-m@1x.webp 1x,
+                    ./images/studio/mobile/our-team-1-m@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/desktop/our-team-1-d@1x.jpg 1x,
+                    ./images/studio/desktop/our-team-1-d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/tablet/our-team-1-t@1x.jpg 1x,
+                    ./images/studio/tablet/our-team-1-t@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/mobile/our-team-1-m@1x.jpg 1x,
+                    ./images/studio/mobile/our-team-1-m@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/studio/mobile/our-team-1-m@1x.jpg"
+                  alt="Фото Игоря Демьяненко"
+                  lang="ru"
+                />
+              </picture>
               <div class="team__member-description">
                 <h3 class="team__member-name" lang="ru">Игорь Демьяненко</h3>
                 <p class="team__member-role">Product Designer</p>
@@ -210,13 +304,58 @@
               </div>
             </li>
             <li class="team__member-card">
-              <img
-                src="./images/studio/our-team-2.jpg"
-                alt="Фото Ольги Репиной"
-                width="270"
-                height="260"
-                lang="ru"
-              />
+              <picture class="team__member-card-pic">
+                <source
+                  srcset="
+                    ./images/studio/desktop/our-team-2-d@1x.webp 1x,
+                    ./images/studio/desktop/our-team-2-d@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/tablet/our-team-2-t@1x.webp 1x,
+                    ./images/studio/tablet/our-team-2-t@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/mobile/our-team-2-m@1x.webp 1x,
+                    ./images/studio/mobile/our-team-2-m@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/desktop/our-team-2-d@1x.jpg 1x,
+                    ./images/studio/desktop/our-team-2-d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/tablet/our-team-2-t@1x.jpg 1x,
+                    ./images/studio/tablet/our-team-2-t@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/mobile/our-team-2-m@1x.jpg 1x,
+                    ./images/studio/mobile/our-team-2-m@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/studio/mobile/our-team-2-m@1x.jpg"
+                  alt="Фото Ольги Репиной"
+                  lang="ru"
+                />
+              </picture>
               <div class="team__member-description">
                 <h3 class="team__member-name" lang="ru">Ольга Репина</h3>
                 <p class="team__member-role">Frontend Developer</p>
@@ -255,13 +394,59 @@
               </div>
             </li>
             <li class="team__member-card">
-              <img
-                src="./images/studio/our-team-3.jpg"
-                alt="Фото Николая Тарасова"
-                width="270"
-                height="260"
-                lang="ru"
-              />
+              <picture class="team__member-card-pic">
+                <source
+                  srcset="
+                    ./images/studio/desktop/our-team-3-d@1x.webp 1x,
+                    ./images/studio/desktop/our-team-3-d@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/tablet/our-team-3-t@1x.webp 1x,
+                    ./images/studio/tablet/our-team-3-t@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/mobile/our-team-3-m@1x.webp 1x,
+                    ./images/studio/mobile/our-team-3-m@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/desktop/our-team-3-d@1x.jpg 1x,
+                    ./images/studio/desktop/our-team-3-d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/tablet/our-team-3-t@1x.jpg 1x,
+                    ./images/studio/tablet/our-team-3-t@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/mobile/our-team-3-m@1x.jpg 1x,
+                    ./images/studio/mobile/our-team-3-m@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/studio/mobile/our-team-3-m@1x.jpg"
+                  alt="Фото Николая Тарасова"
+                  lang="ru"
+                />
+              </picture>
               <div class="team__member-description">
                 <h3 class="team__member-name" lang="ru">Николай Тарасов</h3>
                 <p class="team__member-role">Marketing</p>
@@ -300,13 +485,59 @@
               </div>
             </li>
             <li class="team__member-card">
-              <img
-                src="./images/studio/our-team-4.jpg"
-                alt="Фото Михаила Ермакова"
-                width="270"
-                height="260"
-                lang="ru"
-              />
+              <picture class="team__member-card-pic">
+                <source
+                  srcset="
+                    ./images/studio/desktop/our-team-4-d@1x.webp 1x,
+                    ./images/studio/desktop/our-team-4-d@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/tablet/our-team-4-t@1x.webp 1x,
+                    ./images/studio/tablet/our-team-4-t@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/mobile/our-team-4-m@1x.webp 1x,
+                    ./images/studio/mobile/our-team-4-m@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/desktop/our-team-4-d@1x.jpg 1x,
+                    ./images/studio/desktop/our-team-4-d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/tablet/our-team-4-t@1x.jpg 1x,
+                    ./images/studio/tablet/our-team-4-t@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/studio/mobile/our-team-4-m@1x.jpg 1x,
+                    ./images/studio/mobile/our-team-4-m@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/studio/mobile/our-team-4-m@1x.jpg"
+                  alt="Фото Михаила Ермакова"
+                  lang="ru"
+                />
+              </picture>
               <div class="team__member-description">
                 <h3 class="team__member-name" lang="ru">Михаил Ермаков</h3>
                 <p class="team__member-role">UI Designer</p>
