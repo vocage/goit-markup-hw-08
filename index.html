@@ -21,7 +21,7 @@
     <!-- Header Section -->
 
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header__container">
         <nav class="page-navigation">
           <a href="./index.html" class="logo"
             >Web<span class="logo_half-title_black">Studio</span></a
@@ -36,6 +36,11 @@
             <li class="menu__item"><a class="menu__link" href="">Contacts</a></li>
           </ul>
         </nav>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
 
         <ul class="page-header-contacts nolist">
           <li class="page-header-contacts__item">
@@ -54,16 +59,77 @@
           </li>
         </ul>
       </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu__wrapper">
+            <ul class="nolist mobile-menu__navigation">
+              <li class="mobile-menu__navigation-item">
+                <a
+                  class="mobile-menu__navigation-link mobile-menu__navigation-link_current"
+                  href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu__navigation-item">
+                <a class="mobile-menu__navigation-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mobile-menu__navigation-item">
+                <a class="mobile-menu__navigation-link" href="">Contacts</a>
+              </li>
+            </ul>
+
+            <ul class="nolist mobile-menu__contacts">
+              <li class="mobile-menu__contacts-item">
+                <a
+                  class="mobile-menu__contacts-link mobile-menu__contacts-link_phone"
+                  href="tel:+380961111111"
+                  >+38 096 111 11</a
+                >
+              </li>
+              <li class="mobile-menu__contacts-item">
+                <a
+                  class="mobile-menu__contacts-link mobile-menu__contacts-link_email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="nolist mobile-menu__social-list">
+              <li lass="mobile-menu__social-list-item">
+                <a class="mobile-menu__social-link" href="">Instagram</a><span class="vline"></span>
+              </li>
+              <li lass="mobile-menu__social-list-item">
+                <a class="mobile-menu__social-link" href="">Twitter</a><span class="vline"></span>
+              </li>
+              <li lass="mobile-menu__social-list-item">
+                <a class="mobile-menu__social-link" href="">Facebook</a><span class="vline"></span>
+              </li>
+              <li lass="mobile-menu__social-list-item">
+                <a class="mobile-menu__social-link" href="">LinkedIn</a><span class="vline"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Main section -->
     <main>
       <!-- Hero section -->
-      <section class="section hero hero__overlay">
-        <h1 class="hero__title">Effective solutions for your business</h1>
-        <button class="button hero__button" data-modal-open type="button">
-          Request our service
-        </button>
+      <section class="hero">
+        <div class="container hero_wrapper">
+          <h1 class="hero__title">Effective solutions for your business</h1>
+          <button class="button hero__button" data-modal-open type="button">
+            Request our service
+          </button>
+        </div>
       </section>
 
       <!-- Advantages section -->
@@ -125,7 +191,7 @@
       </section>
 
       <!-- 'What we do' section -->
-      <section class="section section_no-top-padding">
+      <!-- <section class="section section_no-top-padding">
         <div class="container">
           <h2 class="title">What we do</h2>
           <ul class="wedo nolist">
@@ -203,11 +269,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- 'Our Team' section-->
-
-      <!-- TODO: Remove width and hight -->
+      <!-- 
       <section class="section section__team">
         <div class="container">
           <h2 class="title">Our Team</h2>
@@ -577,8 +642,10 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section section__customers">
+      </section> -->
+
+      <!-- CUSTOMERS -->
+      <!-- <section class="section section__customers">
         <div class="container">
           <h2 class="title">Regular Customers</h2>
           <ul class="customers nolist">
@@ -626,11 +693,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__wrapper">
         <div>
           <a class="logo logo__footer" href="./index.html"
@@ -656,9 +723,9 @@
               </li>
             </ul>
           </address>
-        </div>
+        </div> -->
 
-        <div class="find-us">
+    <!-- <div class="find-us">
           <p class="find-us__title">Find us on</p>
           <ul class="social">
             <li>
@@ -715,10 +782,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal window -->
-
+    <!-- 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button-close" data-modal-close>
@@ -808,9 +875,10 @@
           <button class="modal-form_send-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
-    <!-- Script -->
+    <!-- Scripts -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
