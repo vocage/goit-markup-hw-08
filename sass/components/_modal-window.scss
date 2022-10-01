@@ -53,10 +53,10 @@
 
 // TODO: better way to do this?
 .test {
-  @media screen and (max-width: 477px) {
+  @media screen and (max-width: 479px) {
     margin-left: 18px;
   }
-  @media screen and (min-width: 478px) {
+  @media screen and (min-width: 480px) {
     margin-left: 18px;
   }
 }

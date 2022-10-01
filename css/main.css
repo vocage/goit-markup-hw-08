@@ -365,7 +365,7 @@ body {
 }
 .backdrop.is-hidden .modal {
   border-radius: 50%;
-  background-color: var(--color-accent);
+  background-color: var(--accent-color);
   transform: translate(100%, 100%) scale(2);
 }
 
@@ -412,12 +412,12 @@ body {
   fill: var(--brand-color);
 }
 
-@media screen and (max-width: 477px) {
+@media screen and (max-width: 479px) {
   .test {
     margin-left: 18px;
   }
 }
-@media screen and (min-width: 478px) {
+@media screen and (min-width: 480px) {
   .test {
     margin-left: 18px;
   }
@@ -693,7 +693,7 @@ body {
 }
 
 .page-header-contacts__element {
-  color: var(--primary-text-color);
+  color: var(--text-primary);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -999,7 +999,7 @@ body {
     padding-bottom: 30px;
   }
 }
-@media screen and (min-width: 478px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .team__member-description {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1284,12 +1284,111 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__wrapper {
     display: flex;
-    align-items: baseline;
+    gap: 93px;
   }
 }
 
-.subscribe {
-  margin-left: auto;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    display: flex;
+    gap: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__box-logo-and-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__box-logo-and-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.logo__footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo__half-title_white {
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-address {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-address__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-address__location {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.footer-address__location:hover, .footer-address__location:focus {
+  color: var(--brand-color);
+}
+
+.footer-address__contacts {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  color: var(--footer-contacts-color);
+  text-decoration: none;
+}
+.footer-address__contacts:hover, .footer-address__contacts:focus {
+  color: var(--brand-color);
+}
+
+@media screen and (max-width: 767px) {
+  .find-us {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+.find-us__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    text-align: center;
+  }
 }
 
 .subscribe__title {
@@ -1302,24 +1401,44 @@ body {
 
 .subscribe__form {
   display: flex;
-  column-gap: 12px;
+}
+@media screen and (max-width: 1199px) {
+  .subscribe__form {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 .subscribe__form-label {
   display: flex;
+  margin-right: 12px;
 }
 
 .subscribe__form-input {
-  display: flex;
-  align-items: center;
-  width: 358px;
+  display: block;
+  height: 50px;
   padding-left: 16px;
-  line-height: 1.25;
+  font-size: 16px;
+  color: var(--accent-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: transparent;
-  color: var(--accent-color);
+}
+@media screen and (max-width: 479px) {
+  .subscribe__form-input {
+    width: calc(100vw - 30px);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscribe__form-input {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__form-input {
+    width: 358px;
+  }
 }
 .subscribe__form-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
