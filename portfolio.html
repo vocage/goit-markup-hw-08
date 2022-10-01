@@ -20,13 +20,13 @@
   <body>
     <!-- Header Section -->
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header__container">
+        <a href="./index.html" class="logo logo__header"
+          >Web<span class="logo_half-title_black">Studio</span></a
+        >
         <nav class="page-navigation">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo_half-title_black">Studio</span></a
-          >
           <ul class="menu nolist">
-            <li class="menu__item test">
+            <li class="menu__item">
               <a class="menu__link" href="./index.html">Studio</a>
             </li>
             <li class="menu__item">
@@ -35,6 +35,11 @@
             <li class="menu__item"><a class="menu__link" href="">Contacts</a></li>
           </ul>
         </nav>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
 
         <ul class="page-header-contacts nolist">
           <li class="page-header-contacts__item">
@@ -52,6 +57,65 @@
             >
           </li>
         </ul>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu__wrapper">
+            <ul class="nolist mobile-menu__navigation">
+              <li class="mobile-menu__navigation-item">
+                <a
+                  class="mobile-menu__navigation-link mobile-menu__navigation-link_current"
+                  href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu__navigation-item">
+                <a class="mobile-menu__navigation-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mobile-menu__navigation-item">
+                <a class="mobile-menu__navigation-link" href="">Contacts</a>
+              </li>
+            </ul>
+
+            <ul class="nolist mobile-menu__contacts">
+              <li class="mobile-menu__contacts-item">
+                <a
+                  class="mobile-menu__contacts-link mobile-menu__contacts-link_phone"
+                  href="tel:+380961111111"
+                  >+38 096 111 11</a
+                >
+              </li>
+              <li class="mobile-menu__contacts-item">
+                <a
+                  class="mobile-menu__contacts-link mobile-menu__contacts-link_email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="nolist mobile-menu__social-list">
+              <li lass="mobile-menu__social-list-item">
+                <a class="mobile-menu__social-link" href="">Instagram</a><span class="vline"></span>
+              </li>
+              <li lass="mobile-menu__social-list-item">
+                <a class="mobile-menu__social-link" href="">Twitter</a><span class="vline"></span>
+              </li>
+              <li lass="mobile-menu__social-list-item">
+                <a class="mobile-menu__social-link" href="">Facebook</a><span class="vline"></span>
+              </li>
+              <li lass="mobile-menu__social-list-item">
+                <a class="mobile-menu__social-link" href="">LinkedIn</a><span class="vline"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 

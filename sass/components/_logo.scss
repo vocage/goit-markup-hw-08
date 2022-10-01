@@ -1,8 +1,26 @@
 .logo {
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
 
-  @include font(26px, 700, 1.2);
+  @include font(24px, 700, 1.17);
   color: var(--brand-color);
 
+  @media screen and (min-width: 1200px) {
+    @include font(26px, 700, 1.2);
+  }
+
   text-decoration: none;
+}
+
+.logo__header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
