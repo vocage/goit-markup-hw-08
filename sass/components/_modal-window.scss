@@ -4,8 +4,8 @@
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
 
   background-color: var(--accent-color);
   border-radius: 4px;
@@ -16,6 +16,18 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    top: 93px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__button-close {
@@ -32,4 +44,19 @@
   background-color: inherit;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    fill: var(--brand-color);
+  }
+}
+
+// TODO: better way to do this?
+.test {
+  @media screen and (max-width: 477px) {
+    margin-left: 18px;
+  }
+  @media screen and (min-width: 478px) {
+    margin-left: 18px;
+  }
 }

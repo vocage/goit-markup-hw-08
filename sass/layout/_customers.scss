@@ -1,27 +1,55 @@
 .section__customers {
   background-color: var(--accent-color);
-  margin-bottom: 0px;
+  // margin-bottom: 0px;
 }
 
 .customers {
-  @extend %align;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
-  .customers__item:not(:last-child) {
-    margin-right: 30px;
+.customers__title {
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-secondary);
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.customers__item {
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
   }
 }
 
 .customers__thumb {
   @extend %align;
-
+  width: 100%;
+  height: 100%;
   margin-bottom: 0;
+
   background-color: var(--accent-color);
   border: 1px solid;
+  border-radius: 4px;
   border-color: var(--customers-thumb-color);
   color: var(--customers-thumb-color);
-  border-radius: 4px;
 
-  width: 170px;
+  // width: 170px; - handled in .customers_item
   height: 92px;
 
   text-decoration: none;
@@ -38,6 +66,4 @@
 
 .customers__icon {
   fill: currentColor;
-  width: 106px;
-  height: 60px;
 }
