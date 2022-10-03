@@ -30,7 +30,9 @@
 
 .subscribe__form-label {
   display: flex;
-  margin-right: 12px;
+  @media screen and (min-width: 768px) {
+    margin-right: 12px;
+  }
 }
 
 .subscribe__form-input {
@@ -45,12 +47,10 @@
   border-radius: 4px;
   background-color: transparent;
 
-  @media screen and (max-width: 479px) {
-    width: calc(100vw - 30px);
+  @media screen and (max-width: 1199px) {
+    width: 450px;
   }
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    width: 480px;
-  }
+
   @media screen and (min-width: 1200px) {
     width: 358px;
   }
