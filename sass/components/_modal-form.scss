@@ -111,7 +111,7 @@
 
 .modal-form__terms {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   white-space: nowrap;
 
   margin-bottom: 30px;
@@ -121,6 +121,7 @@
     line-height: 1.17;
   }
   @media screen and (min-width: 1200px) {
+    align-items: center;
     font-size: 14px;
     line-height: 1.71;
   }
@@ -166,8 +167,13 @@
 
 .modal-form__link {
   margin-left: 5px;
+
   color: var(--brand-color);
   text-decoration: underline;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: 22px;
+  }
 }
 
 .modal-form_send-btn {

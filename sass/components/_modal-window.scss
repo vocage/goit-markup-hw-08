@@ -50,13 +50,3 @@
     fill: var(--brand-color);
   }
 }
-
-// TODO: better way to do this?
-.test {
-  @media screen and (max-width: 479px) {
-    margin-left: 18px;
-  }
-  @media screen and (min-width: 480px) {
-    margin-left: 18px;
-  }
-}
